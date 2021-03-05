@@ -10,6 +10,8 @@ public class KickerForward extends Command {
   public KickerForward() {
       requires(Robot.kicker);
   }
+  
+  private boolean stopKicker = false;
 
     @Override
     protected void initialize() {
@@ -28,7 +30,7 @@ public class KickerForward extends Command {
 
     @Override
     protected boolean isFinished() {
-      return false;
+      return stopKicker;
 
     }
 
