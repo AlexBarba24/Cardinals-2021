@@ -5,6 +5,15 @@ import frc.robot.Constants;
 
 
 
-public class IntakeReverse {
+public class IntakeReverse extends InstantCommand {
+
+    public IntakeReverse(){
+
+    }
+
+    @Override
+    protected void initialize(){
+        
+    }
     
 }
