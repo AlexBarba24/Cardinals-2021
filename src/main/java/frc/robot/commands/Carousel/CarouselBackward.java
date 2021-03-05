@@ -1,12 +1,15 @@
+
+//in a circle there is no forward or backward but because we do not know the orientation of the motor, for now this is the way it is
+
 package frc.robot.commands.Carousel;
 
 import edu.wpi.first.wpilibj.command.Command;
 import frc.robot.Constants;
 import frc.robot.Robot;
 
-public class CarouselForward extends Command {
+public class CarouselBackward extends Command{
 
-    public CarouselForward() {
+    public CarouselBackward() {
         requires(Robot.carousel);
     }
 
@@ -17,7 +20,7 @@ public class CarouselForward extends Command {
 
     @Override
     protected void execute() {
-      Robot.carousel.forwardCarousel(Constants.CAROUSEL_FORWARD_SPEED);
+      Robot.carousel.reverseCarousel(Constants.CAROUSEL_BACKWARD_SPEED);
     }
 
     @Override
